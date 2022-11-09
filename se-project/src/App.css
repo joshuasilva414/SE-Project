@@ -1,5 +1,30 @@
 .App {
   text-align: center;
+  background-color: #F0FAFF;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1A8FE3;
+  color: white;
+  padding: 10px;
+}
+
+.nav-link {
+  font-size: 24px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: rgb(235, 235, 235);
 }
 
 .App-logo {
