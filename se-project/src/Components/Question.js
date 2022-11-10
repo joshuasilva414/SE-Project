@@ -1,19 +1,19 @@
 import React from 'react';
 import AnswerChoice from "./AnswerChoice";
 
-function Question({question}) {
+function Question({question, show}) {
   return (
-    <>
-        <div>{question.question}</div>
+    <div className={"question__container" + show ? "active":""}>
+        <div><h2>{question.question}</h2></div>
         <br />
         <div>
             {
                 question.answers.map(a => (
-                    <AnswerChoice answer={a} />
+                    <AnswerChoice answer={a}/>
                 ))
             }
         </div>
-    </>
+    </div>
   )
 }
 

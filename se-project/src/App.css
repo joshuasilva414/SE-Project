@@ -13,8 +13,22 @@
   display: flex;
   justify-content: space-between;
   background-color: #1A8FE3;
-  color: white;
+  color: black;
   padding: 10px;
+}
+
+.question__container {
+  border: 1px gray solid;
+  margin: auto;
+}
+
+.test__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  padding: 20px;
+  margin: auto;
 }
 
 .nav-link {

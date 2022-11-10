@@ -2,7 +2,7 @@ import React from 'react'
 
 function AnswerChoice({answer}) {
   return (
-    <div>{answer.option} {"<--"} {answer.isCorrect ? "Correct":"inCorrect"}</div>
+    <div className="answer-choice__container"><h3>{answer.option} {"<--"} {answer.isCorrect ? "Correct":"Incorrect"}</h3></div>
   )
 }
 
