@@ -1,12 +1,23 @@
 .App {
   text-align: center;
-  background-color: #F0FAFF;
+  background-color: #f0faff;
   width: 100vw;
   height: 100vh;
 }
 
 .nav-right {
   display: flex;
+}
+
+.question__container.active {
+  display: block;
+}
+
+.answer-choice__container {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px auto;
 }
 
 .Navbar {
@@ -18,8 +29,33 @@
 }
 
 .question__container {
-  border: 1px gray solid;
+  /* border: 1px gray solid; */
+  background-color: #e8f2f7;
+  display: hidden;
+  padding: 20px;
+  border-radius: 5px;
   margin: auto;
+}
+
+.question-nav__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.correct {
+  border: 1px solid green;
+  background-color: aquamarine;
+}
+.incorrect {
+  border: 1px solid red;
+  background-color: lightcoral;
+}
+
+.question-nav__container > button {
+  padding: 10px;
+  border: 1px solid #e8f2f7;
+  border-radius: 3px;
+  background-color: #1A8FE3;
 }
 
 .test__container {
